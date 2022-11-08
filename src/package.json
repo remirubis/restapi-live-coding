@@ -1,0 +1,29 @@
+{
+  "name": "live-coding",
+  "version": "1.0.0",
+  "description": "Create RestApi with Jacques Attacan",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remirubis/restapi-live-coding.git"
+  },
+  "keywords": [
+    "restapi",
+    "live-coding",
+    "mydigitalschool"
+  ],
+  "author": "Rémi Rubis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remirubis/restapi-live-coding/issues"
+  },
+  "homepage": "https://github.com/remirubis/restapi-live-coding#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.8.4"
+  }
+}

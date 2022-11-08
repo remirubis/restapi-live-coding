@@ -1,0 +1,29 @@
+version: "3.0"
+services:
+  node:
+    container_name: project_node
+    image: 'node:latest'
+    working_dir: /home/node/app
+    command:
+      - /bin/sh
+      - '-c'
+      - 'npm install && npm start'
+    ports:
+      - '3000:3000'
+    volumes:
+      - './src:/home/node/app'
+    links:
+      - mongo
+    networks:
+      - back
+  mongo:
+    container_name: databse
+    image: mongo
+    ports:
+      - "27017:28017"
+    networks:
+      - back
+networks:
+  back:
+    driver: bridge
+    
